@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <title>NASA</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="part1" src="HDU/HDU_lowRez_part1.obj"></a-asset-item>
+            <a-asset-item id="part2" src="HDU/HDU_lowRez_part2.obj"></a-asset-item>
+        </a-assets>
+        <a-obj-model src="#part1" mtl="#part1" scale="0.01" position="0 0 -10"></a-obj-model>
+        <a-obj-model src="#part2" mtl="#part2" scale="0.01" position="0 0 -10"></a-obj-model>
+    </a-scene>
+</body>
+</html>
